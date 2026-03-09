@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-typescript",
+  "name": "boilerplate-typescript-todo",
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
@@ -16,7 +16,7 @@
     "postinstall": "yarn run build:types",
     "dev": "dotenv -- turbo dev",
     "build": "turbo run build",
-    "build:types": "turbo run build --filter=@boilerplate-typescript/types",
+    "build:types": "turbo run build --filter=@boilerplate-typescript-todo/types",
     "lint": "turbo run lint",
     "format": "prettier --write .",
     "format:check": "turbo run format:check",

@@ -10,7 +10,7 @@ BACKEND_CHANGED=$(echo "$STAGED_FILES" | grep "^packages/backend/" || true)
 if [ -n "$FRONTEND_CHANGED" ]; then
   echo "Running lint for frontend..."
   # Use workspace command to stay in root
-  yarn workspace @boilerplate-typescript/frontend lint --max-warnings 0
+  yarn workspace @boilerplate-typescript-todo/frontend lint --max-warnings 0
 
   if [ $? -ne 0 ]; then
     echo "Frontend linting failed. Please fix errors before committing."
@@ -22,7 +22,7 @@ fi
 if [ -n "$BACKEND_CHANGED" ]; then
   echo "Running lint for backend..."
   # Use workspace command to stay in root
-  yarn workspace @boilerplate-typescript/backend lint --max-warnings 0
+  yarn workspace @boilerplate-typescript-todo/backend lint --max-warnings 0
 
   if [ $? -ne 0 ]; then
     echo "Backend linting failed. Please fix errors before committing."

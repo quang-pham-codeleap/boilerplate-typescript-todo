@@ -25,7 +25,7 @@ To scaffold a new project using this boilerplate, open your terminal and run the
 
 ```bash
 # Clone the boilerplate into a new directory
-git clone https://github.com/quang-pham-codeleap/boilerplate-typescript.git my-new-app
+git clone https://github.com/quang-pham-codeleap/boilerplate-typescript-todo.git my-new-app
 
 # Navigate into your new project
 cd my-new-app
@@ -35,7 +35,7 @@ rm -rf .git
 
 # Rename all references to the boilerplate across the entire codebase
 # (This safely updates package.json, this README, and any internal comments)
-npx replace-in-file /boilerplate-typescript/g "my-new-app" "**/*" --ignore=".git/**"
+npx replace-in-file /boilerplate-typescript-todo/g "my-new-app" "**/*" --ignore=".git/**"
 
 # Initialize your own fresh Git repository
 git init

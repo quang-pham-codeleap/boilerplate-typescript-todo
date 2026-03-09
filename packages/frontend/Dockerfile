@@ -6,7 +6,7 @@ FROM node:24-alpine AS pruner
 WORKDIR /app
 RUN npm install -g turbo
 COPY . .
-RUN turbo prune --scope=@boilerplate-typescript/frontend --docker
+RUN turbo prune --scope=@boilerplate-typescript-todo/frontend --docker
 
 # -------------------------------------------------------------------
 # STAGE 2: Builder
@@ -27,7 +27,7 @@ RUN yarn install --frozen-lockfile --ignore-scripts --network-timeout 100000
 COPY --from=pruner /app/out/full/ .
 
 # Build the frontend and types packages
-RUN yarn turbo run build --filter=@boilerplate-typescript/frontend...
+RUN yarn turbo run build --filter=@boilerplate-typescript-todo/frontend...
 
 # -------------------------------------------------------------------
 # STAGE 3: Runner

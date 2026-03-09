@@ -1,5 +1,5 @@
 {
-  "name": "@boilerplate-typescript/types",
+  "name": "@boilerplate-typescript-todo/types",
   "version": "0.0.1",
   "private": true,
   "sideEffects": false,

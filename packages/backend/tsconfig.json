@@ -23,7 +23,7 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@/*": ["./src/*"],
-      "@boilerplate-typescript/types": ["../shared/types/src/*"]
+      "@boilerplate-typescript-todo/types": ["../shared/types/src/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

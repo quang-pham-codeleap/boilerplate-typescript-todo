@@ -34,7 +34,7 @@ winget install k6
 
 ### Run the Benchmark
 
-Ensure the backend is running locally (`yarn workspace @boilerplate-typescript/backend dev`), then run:
+Ensure the backend is running locally (`yarn workspace @boilerplate-typescript-todo/backend dev`), then run:
 
 ```bash
 # From the project root

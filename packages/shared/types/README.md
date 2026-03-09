@@ -1,10 +1,10 @@
-# Shared Types & Schemas (@boilerplate-typescript/types)
+# Shared Types & Schemas (@boilerplate-typescript-todo/types)
 
 This package serves as the **Single Source of Truth** for data structures and validation logic shared between the Frontend and Backend.
 
 By centralizing our TypeScript interfaces and **Zod** schemas here, we ensure 100% type-safety across the entire network boundary.
 
-Package name: `@boilerplate-typescript/types`
+Package name: `@boilerplate-typescript-todo/types`
 
 **Note:** For this monorepo, this package is automatically being build after runnning `yarn install` in the root of the repository, so you don't need to worry about building it separately. Just make sure to run `yarn install` whenever you pull new changes that might include updates to the shared types.
 
@@ -82,7 +82,7 @@ yarn run build:types
 ### Usage in Code
 
 ```typescript
-import { TodoSchema, type Todo } from "@boilerplate-typescript/types";
+import { TodoSchema, type Todo } from "@boilerplate-typescript-todo/types";
 ```
 
 ## Build Commands

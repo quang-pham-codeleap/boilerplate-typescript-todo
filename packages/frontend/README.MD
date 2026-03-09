@@ -1,8 +1,8 @@
-# Frontend React Application (@boilerplate-typescript/frontend)
+# Frontend React Application (@boilerplate-typescript-todo/frontend)
 
 This is the frontend application built with **React 19**, **Vite**, **TanStack Router**, **Tanstack Query**, **Tailwind CSS**, **Jotai**, and **shadcn/ui**.
 
-Package name: `@boilerplate-typescript/frontend`
+Package name: `@boilerplate-typescript-todo/frontend`
 
 ## Project Structure
 

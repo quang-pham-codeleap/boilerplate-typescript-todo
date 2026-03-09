@@ -1,4 +1,4 @@
-import { ErrorResponse } from "@boilerplate-typescript/types";
+import { ErrorResponse } from "@boilerplate-typescript-todo/types";
 import {
   ArgumentsHost,
   Catch,

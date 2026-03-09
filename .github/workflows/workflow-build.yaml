@@ -35,11 +35,11 @@ jobs:
       # Backend Workflows
       - name: Build Backend
         if: ${{ inputs.build-backend }}
-        run: yarn turbo run build --filter=@boilerplate-typescript/backend
+        run: yarn turbo run build --filter=@boilerplate-typescript-todo/backend
 
       - name: Typecheck Backend
         if: ${{ inputs.build-backend }}
-        run: yarn turbo run typecheck --filter=@boilerplate-typescript/backend
+        run: yarn turbo run typecheck --filter=@boilerplate-typescript-todo/backend
 
       - name: Test Backend (Coverage)
         if: ${{ inputs.build-backend }}
@@ -62,11 +62,11 @@ jobs:
       # Frontend Workflows
       - name: Build Frontend
         if: ${{ inputs.build-frontend }}
-        run: yarn turbo run build --filter=@boilerplate-typescript/frontend
+        run: yarn turbo run build --filter=@boilerplate-typescript-todo/frontend
 
       - name: Typecheck Frontend
         if: ${{ inputs.build-frontend }}
-        run: yarn turbo run typecheck --filter=@boilerplate-typescript/frontend
+        run: yarn turbo run typecheck --filter=@boilerplate-typescript-todo/frontend
 
       - name: Test Frontend (Coverage)
         if: ${{ inputs.build-frontend }}

@@ -6,7 +6,7 @@ FROM node:24-alpine AS pruner
 WORKDIR /app
 RUN npm install -g turbo
 COPY . .
-RUN turbo prune --scope=@boilerplate-typescript/backend --docker
+RUN turbo prune --scope=@boilerplate-typescript-todo/backend --docker
 
 # -------------------------------------------------------------------
 # STAGE 2: Builder
@@ -26,7 +26,7 @@ RUN yarn install --frozen-lockfile --ignore-scripts
 COPY --from=pruner /app/out/full/ .
 
 # Build Backend, when we build backend, it will also build 'types' as it's a dependency
-RUN yarn turbo run build --filter=@boilerplate-typescript/backend...
+RUN yarn turbo run build --filter=@boilerplate-typescript-todo/backend...
 
 # Install dependencies for production -> This is much more lightweight
 RUN yarn install --production --ignore-scripts --prefer-offline

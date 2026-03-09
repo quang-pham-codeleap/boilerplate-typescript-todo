@@ -1,8 +1,8 @@
-# Backend API (@boilerplate-typescript/backend)
+# Backend API (@boilerplate-typescript-todo/backend)
 
 This is the core API service built with **NestJS** and **TypeORM**.
 
-Package name: `@boilerplate-typescript/backend`
+Package name: `@boilerplate-typescript-todo/backend`
 
 ## Project Structure
 
@@ -69,7 +69,7 @@ docker compose up -d db
 
 ```bash
 yarn install
-yarn workspace @boilerplate-typescript/backend dev
+yarn workspace @boilerplate-typescript-todo/backend dev
 ```
 
 Note: The application starts on the port defined in `APP_BACKEND_PORT` (default: 3000).
