@@ -8,6 +8,7 @@ import { TypeOrmExceptionFilter } from "./common/filters/typeorm-exception.filte
 import { HealthModule } from "./modules/health/health.module";
 import { MetricModule } from "./modules/metric/metric.module";
 import { HelloWorldModule } from "./modules/hello-world/hello-world.module";
+import { TodoModule } from "./modules/todo/todo.module";
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { HelloWorldModule } from "./modules/hello-world/hello-world.module";
     HealthModule,
     MetricModule,
     HelloWorldModule,
+    TodoModule,
   ],
   controllers: [],
   providers: [
