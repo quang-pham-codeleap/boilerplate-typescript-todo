@@ -942,9 +942,9 @@
     dequal "^2.0.3"
 
 "@fastify/middie@^9.1.0":
-  version "9.3.1"
-  resolved "https://registry.yarnpkg.com/@fastify/middie/-/middie-9.3.1.tgz#ca5d8829f32c0f35bffaf387147231fe35f0f2f8"
-  integrity sha512-5uvKKF5zkocgsSiTyBU7AW2LmQ1Fwn4MNJ/8bORAuFwsQ0hqHjtpYaPqO79BkP4aqH5T7P3F2gJ3b3kerAIk7A==
+  version "9.3.2"
+  resolved "https://registry.yarnpkg.com/@fastify/middie/-/middie-9.3.2.tgz#c7f1d067ddc04654596a401351e45692d3b33987"
+  integrity sha512-5C3xMHJxpfqoHd+xZSHPBI71fpzkoF6wMsYtgzXRyQUNvsIAxJm2yY4r2fUjF0h3rS9MXlo/aXLaXv3s4TL+JQ==
   dependencies:
     "@fastify/error" "^4.0.0"
     fastify-plugin "^5.0.0"
